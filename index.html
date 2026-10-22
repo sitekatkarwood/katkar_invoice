@@ -319,27 +319,45 @@
                     </table>
                   </div>
 
-                  <!-- لاین افقی کامل و اختصاصی اطلاعات واریز وجه و تسویه حساب -->
-                  <div class="w-full bg-slate-50 border border-dashed border-slate-300 rounded-lg p-2.5 mb-3">
-                    <div class="flex items-center justify-between border-b border-slate-200 pb-1.5 mb-2">
-                      <span class="font-bold text-slate-800 text-xs flex items-center gap-1.5">
-                        <i class="fa-solid fa-credit-card text-red-600"></i>
+                  <!-- لاین شیک، وسط‌چین و کارت‌مانند اطلاعات واریز وجه و تسویه حساب -->
+                  <div class="w-full bg-gradient-to-l from-slate-50 via-red-50/20 to-slate-50 border border-slate-300 rounded-xl p-3 mb-3 shadow-sm">
+                    <div class="flex items-center justify-between border-b border-slate-200/80 pb-1.5 mb-2.5">
+                      <span class="font-extrabold text-slate-800 text-xs flex items-center gap-2">
+                        <span class="w-5 h-5 rounded-md bg-red-600 text-white flex items-center justify-center text-[10px]">
+                          <i class="fa-solid fa-credit-card"></i>
+                        </span>
                         اطلاعات واریز وجه و تسویه حساب
                       </span>
-                      <span class="text-[10px] text-slate-500">* لطفاً پس از واریز، تصویر فیش را به شماره همراه ۰۹۱۷۳۱۵۸۵۲۲ ارسال فرمایید.</span>
+                      <span class="text-[10px] text-slate-500 font-medium">
+                        * لطفاً پس از واریز، تصویر فیش را به شماره همراه <strong class="text-slate-700 font-mono">۰۹۱۷۳۱۵۸۵۲۲</strong> ارسال فرمایید.
+                      </span>
                     </div>
                     
                     <div class="grid grid-cols-2 gap-3">
-                      <!-- شماره کارت بانکی کامل در یک خط بدون شکستگی -->
-                      <div class="flex items-center justify-between bg-white border border-slate-200 px-3 py-1.5 rounded-md shadow-sm">
-                        <span class="text-[11px] text-slate-600 font-semibold whitespace-nowrap">شماره کارت بانکی (بنام کتکار):</span>
-                        <span class="font-mono text-xs font-bold text-slate-900 tracking-wider whitespace-nowrap">6037 6981 4564 6597</span>
+                      <!-- باکس شماره کارت بانکی (طراحی کارت مدرن با ارقام وسط‌چین) -->
+                      <div class="bg-white border border-slate-200 rounded-lg p-2.5 flex flex-col items-center justify-center shadow-sm">
+                        <div class="flex items-center justify-center gap-1.5 text-slate-600 text-[11px] font-semibold mb-1">
+                          <i class="fa-solid fa-building-columns text-red-500 text-xs"></i>
+                          <span>شماره کارت بانکی (به‌نام کتکار)</span>
+                        </div>
+                        <div class="w-full bg-slate-50 border border-dashed border-slate-300 py-1.5 px-2 rounded-md flex items-center justify-center">
+                          <span class="font-mono text-sm font-black text-slate-900 tracking-widest text-center" dir="ltr">
+                            6037&nbsp;&nbsp;6981&nbsp;&nbsp;4564&nbsp;&nbsp;6597
+                          </span>
+                        </div>
                       </div>
 
-                      <!-- شماره شبا کامل در یک خط بدون شکستگی -->
-                      <div class="flex items-center justify-between bg-white border border-slate-200 px-3 py-1.5 rounded-md shadow-sm">
-                        <span class="text-[11px] text-slate-600 font-semibold whitespace-nowrap">شماره شبا (IBAN):</span>
-                        <span class="font-mono text-[11px] font-bold text-slate-900 tracking-wider whitespace-nowrap">IR 11 0190 0000 0010 1527 4740 03</span>
+                      <!-- باکس شماره شبا (ارقام سر خط و در یک کادر اختصاصی بدون برش) -->
+                      <div class="bg-white border border-slate-200 rounded-lg p-2.5 flex flex-col items-center justify-center shadow-sm">
+                        <div class="flex items-center justify-center gap-1.5 text-slate-600 text-[11px] font-semibold mb-1">
+                          <i class="fa-solid fa-money-check-dollar text-emerald-600 text-xs"></i>
+                          <span>شماره شبا (IBAN)</span>
+                        </div>
+                        <div class="w-full bg-slate-50 border border-dashed border-slate-300 py-1.5 px-2 rounded-md flex items-center justify-center">
+                          <span class="font-mono text-[11.5px] font-extrabold text-slate-900 tracking-wider text-center" dir="ltr">
+                            IR 11 0190 0000 0010 1527 4740 03
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
