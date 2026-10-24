@@ -23,6 +23,150 @@
     -webkit-font-smoothing: antialiased;
   }
   
+  /* بازطراحی چیدمان فاکتور کتکار: تراز دقیق، فاصله‌های یکنواخت و ظاهر منظم */
+  #print-area {
+    height: 297mm;
+    min-height: 297mm;
+    padding: 9mm 10mm !important;
+    gap: 14px;
+    justify-content: flex-start !important;
+    border-radius: 12px;
+    line-height: 1.55;
+  }
+  #print-area > div:first-child { width: 100%; }
+  #print-area > div:last-child { width: 100%; margin-top: auto; }
+  #print-area > div:first-child > .h-1 { height: 4px; margin-bottom: 16px; }
+  #print-area > div:first-child > .flex.items-center.justify-between.border-b-2 {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 18px;
+    padding: 0 0 14px;
+    margin-bottom: 14px;
+  }
+  #print-area > div:first-child > .flex.items-center.justify-between.border-b-2 > div:first-child {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    min-width: 0;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+  }
+  #print-area > div:first-child > .flex.items-center.justify-between.border-b-2 > div:last-child {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    min-width: 0;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 5px !important;
+  }
+  #print-area > div:first-child > .flex.items-center.justify-between.border-b-2 > div:last-child h2 {
+    margin-bottom: 4px;
+    font-size: 17px;
+    text-align: center;
+  }
+  #print-area > div:first-child > .flex.items-center.justify-between.border-b-2 > div:last-child > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 27px;
+    padding: 4px 8px;
+    border-radius: 7px;
+    white-space: nowrap;
+  }
+  #print-area > div:first-child > .flex.items-center.justify-between.border-b-2 img {
+    max-width: 180px;
+    max-height: 72px;
+    object-fit: contain;
+  }
+  #print-area table { table-layout: fixed; }
+  #print-area th, #print-area td {
+    vertical-align: middle !important;
+    line-height: 1.5;
+  }
+  #print-area #preview-items-body td { height: 34px; }
+  #print-area #preview-items-body td:nth-child(2) { text-align: right; padding-right: 12px; }
+  #print-area > div:first-child > div.bg-slate-50.border.border-slate-200.border-r-4 {
+    padding: 11px 14px;
+    line-height: 1.8;
+  }
+  #print-area > div:first-child > div.bg-slate-50.border.border-slate-200.border-r-4 > .grid {
+    align-items: center;
+    row-gap: 5px;
+  }
+  #print-area #preview-subtotal,
+  #print-area #preview-shipping,
+  #print-area #preview-elevator,
+  #print-area #preview-install,
+  #print-area #preview-deposit,
+  #print-area #preview-balance {
+    text-align: center !important;
+    vertical-align: middle !important;
+    direction: ltr;
+    font-variant-numeric: tabular-nums;
+    padding: 7px 10px !important;
+  }
+  #print-area table:has(#preview-subtotal) td:first-child {
+    text-align: right;
+    padding-right: 14px !important;
+  }
+  #print-area table:has(#preview-subtotal) tr:first-child td,
+  #print-area table:has(#preview-balance) tr:last-child td { height: 42px; }
+  #print-area table:has(#preview-balance) tr:last-child td {
+    background: #fff1f2;
+    border-color: #fecdd3;
+  }
+  #print-area > div:first-child > div.bg-gradient-to-l {
+    padding: 12px;
+    margin-top: 14px;
+    margin-bottom: 0;
+  }
+  #print-area > div:first-child > div.bg-gradient-to-l > div:first-child {
+    align-items: center;
+    gap: 8px;
+  }
+  #print-area > div:first-child > div.bg-gradient-to-l > div:first-child > span:last-child {
+    text-align: left;
+    line-height: 1.7;
+  }
+  #print-area > div:first-child > div.bg-gradient-to-l .grid.grid-cols-2 { gap: 12px; }
+  #print-area > div:first-child > div.bg-gradient-to-l .grid.grid-cols-2 > div {
+    min-height: 82px;
+    justify-content: center;
+    gap: 4px;
+    padding: 10px;
+  }
+  #print-area > div:first-child > div.bg-gradient-to-l .grid.grid-cols-2 > div > div:last-child {
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  #print-area > div:first-child > div.bg-gradient-to-l .grid.grid-cols-2 > div > div:last-child span {
+    text-align: center;
+    letter-spacing: 0 !important;
+  }
+  #print-area > div:last-child > .grid {
+    align-items: stretch;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  #print-area > div:last-child > .grid > div { min-height: 105px; }
+  #print-area > div:last-child > .text-center.text-\[9px\] {
+    align-items: center;
+    gap: 10px;
+    padding-top: 8px;
+    line-height: 1.6;
+  }
+  @media (max-width: 800px) {
+    #print-area { transform-origin: top center; }
+  }
+
   /* Print styling fix */
   @media print {
     html, body {
@@ -49,7 +193,8 @@
     #print-area {
       display: flex !important;
       flex-direction: column !important;
-      justify-content: space-between !important;
+      justify-content: flex-start !important;
+      gap: 14px !important;
       width: 210mm !important;
       height: 295mm !important;
       max-height: 297mm !important;
